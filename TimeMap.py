@@ -10,3 +10,6 @@ class TimeMap:
     def get(self, key: str, timestamp: int) -> str:
         res = ""
         values = self.map.get(key, [])
+        l, r = 0, len(values) - 1
+        while l <= r:
+            m = (l + r) // 2
