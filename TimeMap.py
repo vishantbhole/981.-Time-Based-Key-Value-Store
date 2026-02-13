@@ -16,3 +16,6 @@ class TimeMap:
             if values[m][1] <= timestamp:
                 res = values[m][0]
                 l = m + 1
+            else:
+                r = m - 1
+        return res
