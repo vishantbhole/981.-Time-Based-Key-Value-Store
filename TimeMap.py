@@ -26,3 +26,7 @@ if __name__ == "__main__":
 
     out = []
     obj = None
+    for op, a in zip(ops, args):
+        if op == "TimeMap":
+            obj = TimeMap()
+            out.append(None)
