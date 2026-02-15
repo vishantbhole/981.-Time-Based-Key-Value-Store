@@ -19,3 +19,7 @@ class TimeMap:
             else:
                 r = m - 1
         return res
+
+if __name__ == "__main__":
+    ops = ["TimeMap", "set", "get", "get", "set", "get", "get"]
+    args = [[], ["foo", "bar", 1], ["foo", 1], ["foo", 3], ["foo", "bar2", 4], ["foo", 4], ["foo", 5]]
