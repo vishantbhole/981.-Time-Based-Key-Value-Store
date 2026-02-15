@@ -33,3 +33,8 @@ if __name__ == "__main__":
         elif op == "set":
             obj.set(a[0], a[1], a[2])
             out.append(None)
+        elif op == "get":
+            out.append(obj.get(a[0], a[1]))
+
+    print(out)  # [None, None, "bar", "bar", None, "bar2", "bar2"]
+
