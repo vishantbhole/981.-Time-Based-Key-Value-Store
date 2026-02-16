@@ -26,3 +26,15 @@ if __name__ == "__main__":
 
     out = []
     obj = None
+    for op, a in zip(ops, args):
+        if op == "TimeMap":
+            obj = TimeMap()
+            out.append(None)
+        elif op == "set":
+            obj.set(a[0], a[1], a[2])
+            out.append(None)
+        elif op == "get":
+            out.append(obj.get(a[0], a[1]))
+
+    print(out)  # [None, None, "bar", "bar", None, "bar2", "bar2"]
+
